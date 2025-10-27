@@ -1,0 +1,110 @@
+:root{
+    --size: 500px;
+    --bg-init: #00050c;
+    --bg-end: #000000;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(100deg, var(--bg-init) 30%, var(--bg-end)  50%);
+}
+
+.area {
+    width: var(--size);
+    height: var(--size);
+    box-shadow: 0 8px 30px #0abdc6;
+    border-radius: 10px;
+    box-sizing: border-box;
+     
+}
+
+ /*  */
+.side_panel{
+    display: flex;
+    flex-direction:  column;  /*los hijos de la clase seran vertcialemnet*/
+    margin-left: 20px; /*Mueve el panel, no solo las cajas*/
+
+}
+.score_panel{
+    width: 200px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alinea los hijos de la clase al centro horizontalmente*/
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 30px #0abdc6;
+    margin-bottom: 15px;                /* Separar la siguiente caja */
+    border-radius: 5px;
+    box-sizing: border-box;
+    color:#330882;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+.score_panel p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* margin: 5px 0 5px 0; */
+    text-shadow: 0 0 10px #00ff9f;
+}
+.score_details{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+
+.next_piece_panel{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alinea los hijos de la clase al centro horizontalmente*/
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 30px #0abdc6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #5a7c90;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifw;
+}
+
+
+.rigth_panel{
+    display: flex;
+    flex-direction:  column;  /*los hijos de la clase seran vertcialemnet*/
+    margin-left: 20px; /*Mueve el panel, no solo las cajas*/
+
+}
+.controls_info{
+    width: 200px;
+    /* height: 150px; */  /* <-- Quita la altura fija para que quepa todo */
+    min-height: 150px;   /* <-- Usa altura mínima en su lugar */
+    padding: 10px;       /* <-- Añade espacio interno */
+    display: flex;       /* <-- AÑADIDO */
+    flex-direction: column; /* <-- AÑADIDO */
+    align-items: center;    /* <-- AHORA SÍ FUNCIONA */
+    justify-content: center; /* <-- AHORA SÍ FUNCIONA */
+    text-align: center;     /* <-- AÑADIDO (Centra H2 y la lista) */
+    box-shadow: 0 8px 30px #0abdc6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* <-- Corregí un error, tenías una 'w' al final */
+}
+.controls_info ul {
+    list-style: none; /* Quita las viñetas (bullets) */
+    padding: 10px;       /* Quita el espacio de la izquierda */
+    margin: 10px;        /* Quita márgenes */
+    font-size: 0.9rem;
+    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+}
+
+.controls_info li {
+    margin-bottom: 5px; /* Pequeño espacio entre cada control */
+}

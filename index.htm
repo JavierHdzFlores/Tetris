@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+   <div class="area" role="application" aria-label="Tetris canvas">
+    <canvas id="tetris" width="500" height="500"></canvas>
+  </div>
+  <div class="side_panel">
+    <div class="score_panel">
+      <h2>PUNTAJE</h2>
+      <p id="score_display" >00</p>
+      <div class="score_details">
+        <button id="restartButton" style="display: none;"></button>
+      </div>
+    </div>
+    <div class="next_piece_panel">
+      <h2>Siguiente pieza</h2>
+      <canvas id="next_piece" width="200" height="100"></canvas>
+    </div>
+  </div>
+  <div class="rigth_panel">
+    <div class="controls_info">
+      <h2>Controles</h2>
+      <ul>
+        <li>Flecha izquierda: Mover a la izquierda</li>
+        <li>Flecha derecha: Mover a la derecha</li>
+        <li>Flecha abajo: Mover hacia abajo</li>
+        <li>Flecha arriba: Rotar pieza</li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/tetris.js"></script>
+</body>
+</html>
