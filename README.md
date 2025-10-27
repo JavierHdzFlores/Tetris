@@ -2,7 +2,7 @@
 
 ¡Un clon clásico del juego Tetris desarrollado con HTML, CSS y JavaScript puro! Este proyecto fue creado como una práctica de desarrollo web, implementando toda la lógica del juego, el renderizado en `<canvas>` y una estética retro-futurista desde cero.
 
-![Captura de pantalla del Tetris en juego](<![Captura de pantalla_27-10-2025_12229_](https://github.com/user-attachments/assets/5171d1aa-90c9-4432-a8e0-0fede7466104)>)
+(<![Captura de pantalla_27-10-2025_12229_](https://github.com/user-attachments/assets/5171d1aa-90c9-4432-a8e0-0fede7466104)>)
 ## ✨ Características (Features)
 
 * Juego clásico de Tetris con los 7 Tetrominós.
